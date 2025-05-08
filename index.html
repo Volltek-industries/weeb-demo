@@ -1,9 +1,4 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>VollTek</title>
@@ -11,16 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-		<!DOCTYPE html>
-<html>
-	<head>
-		<title>VollTek</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />  <!-- CSS de la plantilla -->
 		
-		<!-- 🌟 AÑADE AQUÍ EL NUEVO CSS (PUNTO 4) -->
 		<style>
 			/* Estilos para el video de fondo */
 			#intro {
@@ -28,7 +14,7 @@
 				height: 100vh;
 				overflow: hidden;
 			}
-			#videofondo {
+			#video-fondo {  /* Asegúrate que coincida con el ID en HTML */
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -43,18 +29,29 @@
 				color: white;
 				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 			}
-			/* Estilo para el logo (opcional) */
+			/* Estilo para el logo */
 			.logo img {
-				height: 120px;  /* Ajusta el tamaño */
+				height: 120px;
 				width: auto;
 			}
 		</style>
 	</head>
-	<body>
-		<!-- ... resto de tu HTML ... -->
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+			<!-- Intro -->
+			<div id="intro">
+				<video autoplay muted loop id="video-fondo">  <!-- ID debe coincidir con CSS -->
+					<source src="assets/videos/videofondo.mp4" type="video/mp4">
+				</video>
+				<h1>VollTek<br />Industries</h1>
+				<p>35 años de experiencia industrial en tus manos</p>
+			</div>
+			
+			<!-- Resto de tu código... -->
+		</div>
 	</body>
 </html>
-
 
 
 		
